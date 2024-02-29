@@ -1,0 +1,312 @@
+/* Global */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0;
+}
+/*HEADER */
+header {
+    background-color: #000000;/*Changed style color. Sterling*/
+    display: flex;
+}
+
+
+/* Time */
+header p#time{
+    margin-left: auto;
+    margin-right: 100px;
+    padding:3px;
+    border: solid 1px #fff;
+    color:#fff;
+}
+#time{
+    padding: 1px 1px 1px 1px;
+
+}
+
+
+/* Navigation Bar */
+nav {  /* TASK 1 */
+    background-color: #0a7911db;/*Changed style color. Sterling*/
+    padding-top:5px;
+    height: 50px;
+}
+nav .navbar li  {
+    display: inline;
+    width: 250px;
+    padding: 8px;
+}
+nav .dropbtn {
+    border: none;
+    position: relative;
+    cursor: pointer;
+}
+nav .dropbtn .dropdown_list { /* TASK 2 */
+    position: absolute;
+    left: -5px;
+    top:30px;
+    background-color: #949292;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 125px;
+    display: none;
+}
+nav .dropbtn .dropdown_list li {
+    color: black;
+    padding: 5px 0px;
+    display: block;
+}
+nav .dropbtn:hover .dropdown_list {
+    display: block;
+}
+nav li a {
+    text-decoration: none;
+}
+nav li a:link {
+    color:#f10909;/*Changed style color. Sterling*/
+}
+nav li a:visited {
+    color:#ffffff;/*Changed style color. Sterling*/
+}
+nav li a:hover {
+    color:#eb13aa;/*Changed style color. Sterling*/
+}
+nav li a:active {
+    color:#12f806;/*Changed style color. Sterling*/
+}
+
+/* PAGE CONTENT */
+main {
+    max-width:2000px;
+}
+main section#band, 
+main section#tour div, 
+main section#contact { /* TASK 3 */
+    max-width:800px;
+    margin: auto;
+    text-align: center;
+}
+
+
+/* Band */
+main section#band {
+    padding: 50px;
+}
+main section#band p+p {
+    text-align:justify;
+}
+main section#band .bandmembers { /* TASK 5 */
+    display: flex;
+}
+
+/* Tour */
+main section#tour {
+    background-color:rgb(0, 0, 0);
+    padding: 50px;
+}
+
+main section#tour div h2 
+main section#tour div p {
+    color: rgb(255, 255, 255);
+    text-align:center;
+}
+
+main section#tour div ul {
+    background-color:rgb(255, 255, 255);
+    text-align:left;
+    padding:0;
+    margin-top: 50px;
+}
+main section#tour div ul li { /* TASK 6 */
+    list-style-type: none;
+    padding: 10px;
+    border-bottom: solid 1px rgb(197, 196,196);
+}
+
+main section#tour div ul li span { /* TASK 7 */
+    padding: 5px;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255,0,0);
+}
+
+main section#tour div ul li:last-child span { /* TASK 8 */
+    margin-left: 650px;
+    padding:5px 10px;
+    background-color: rgb(0,0,0);
+    border-radius: 25px;
+}
+
+main section#tour div {
+    text-align:left;
+}
+
+main section#tour div .tourcities { /* TASK 9 */
+    display: flex;
+}
+
+main section#tour div .tourcities div {
+    margin: 10px 8px;
+    background-color:rgb(255, 255, 255);
+}
+
+main section#tour div .tourcities div:first-child {
+    margin-left: 0px;
+}
+
+main section#tour div .tourcities div:last-child {
+    margin-right: 0px;
+}
+
+main section#tour div .tourcities div p {
+    color:rgb(0, 0, 0);
+}
+
+main section#tour div .tourcities div button {
+    background-color: rgb(0, 0, 0);
+    color:rgb(236, 236, 236);
+    padding: 8px;
+}
+
+/* Ticket Modal */
+main section#ticketModal {
+    display: none;
+}
+
+/* Contact section */
+main section#contact h2 {
+    margin-top: 60px
+}
+
+
+
+main section#contact h2+p {
+    margin: 30px 0;
+}
+main section#contact .contactinfo {
+    display:flex;
+    margin-top: 40px;
+}
+main section#contact .contactways {
+    width: 400px;
+    height: 250px;
+    text-align:left;
+    padding:0;
+    margin-top:0;
+}
+main section#contact .contactways li {
+    display:block;
+    padding: 4px 0;
+}
+main section#contact .contactways li i {
+    width: 30px;
+}
+main section#contact .contactform {
+    width: 400px;
+    height: 250px;
+    text-align: left;
+    padding:0;
+}
+
+main section#contact .contactform input#Name {
+    width: 95%;
+    height: 35px;
+}
+main section#contact .contactform input#Email {
+    width: 95%;
+    height: 35px;
+}
+main section#contact .contactform textarea#Message {
+    display:block;
+    width: 98%;
+}
+main section#contact .contactform button { /* TASK 10 */
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   float: right;
+   padding: 7px 10px;
+   margin-top: 10px;
+}
+
+main section#contact .contactform .inputs {
+    float: left;
+    width: 50%;
+}
+
+
+main section#contact .contactform p {
+    color: #ff0000;
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 0;
+    display: block;
+}
+
+
+main#map img {
+    max-width: 100%;
+}
+
+
+
+/* Main Merchandise */
+
+main section #merchandise {
+    max-width: 100px;
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+main #merchandise #products {
+    display: flex;
+    flex-wrap: wrap; /* wrap items within window width */
+}
+
+main #merchandise #products li {
+    list-style-type: none;
+    flex-basis: 33%; /* For 3 items in a row.*/
+}
+
+main #merchandise #products li img {
+    border: solid 1px rgb(0, 0, 0);
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+main #merchandise #info_box {
+    width: 20%;
+    min-height: 60px;
+    padding: 20px 25px;
+    color: rgb(255, 255, 255);
+    font-size: 1.1em;
+    border-radius: 1em;
+    background-color: rgba(161,4,4,0.8);
+    visibility: hidden;
+    position: absolute;
+}
+
+main #merchandise #info_box #info_num
+main #merchandise #info_box #info_price {
+    margin-bottom: 5px;
+}
+
+main #merchandise #info_box #closeInfo:hover {
+    cursor: pointer;
+    color: lightgrey;
+}
+
+
+/* Footer */
+footer {
+    height: 155px;
+    text-align: center;
+    padding-top: 45px;
+}
+footer i {
+    padding: 5px;
+}
+footer p {
+    margin-top: 40px;
+}
