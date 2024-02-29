@@ -1,0 +1,101 @@
+/*This code is from Assignment 7 instructions, except for edits, that are commented.*/
+main #slideshow .slide .slideinfo {
+    position: absolute;
+    bottom: 15%;
+    color: rgb(250, 250, 250);
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+}
+main #slideshow .slide .slideinfo h3 {
+    font-size: 1.5em;
+   align-self: center;
+     margin-bottom: 0%;
+}
+
+main #slideshow .slide .slideinfo h3 + p {
+    align-self: center;
+     margin-top: 0%;
+}
+
+
+.slides-box .slide img {
+    display: table;
+    /*Remove height code.*/
+    /*height:auto;*/
+}
+
+
+.slideshow-buttons {
+    color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.slideshow-buttons div {
+    color: white;
+    display: inline-block;
+    font-size: 2em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.slideshow-buttons .next-btn {
+    margin-left: 4%;
+    transition: all ease-in-out 0.3s;
+    text-shadow: 1px 1px 2px black;
+}
+
+.slideshow-buttons .next-btn:hover {
+    transform: translateX(4px);
+}
+
+.slideshow-buttons .prev-btn {
+    transition: all ease-in-out 0.3s;
+    text-shadow: 1px 1px 2px black;
+}
+
+.slideshow-buttons .prev-btn:hover {
+    transform: translateX(-4px);
+}
+/*End of Assignment 7 CSS code.*/
+
+
+
+/*This is from the DEMO CSS code "crossfade-slide-photo" that was downloaded from https://jquery.com/download/*/
+/*   Below code is all from DEMO        */
+
+#slideshow {
+    /*Edit width from 80% to 100%.*/
+    width: 100%;
+    /*Keeps one picture at a time for slideshow effect.*/
+    /*Adjust from 900px to 1200px*/
+    /*Do not remove max-width code*/
+    max-width: 1200px;
+    /*Edit height from 500px to what is written, to increase picture size.*/
+    height: 500px;
+    /*Adjust first margin from 40px to 20px*/
+    margin: 20px auto;
+    position: relative;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+
+main #slideshow .slide .slideinfo h3 {
+    /*Remove following code. Not needed*/
+    /*background-color: rgba(255, 255, 255, 0.6);*/
+    position: absolute;
+    padding: 20px 40px;
+    text-align: left;
+    /*Remove following code. Not needed*/
+    /*border-top: 2px solid white;*/
+    /*border-right: 2px solid white;*/
+    /*border-bottom: 2px solid white;*/
+    /*border-left: 8px solid white;*/
+    font-size: 18px;
+    font-weight: bold;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
